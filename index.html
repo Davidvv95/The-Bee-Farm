@@ -11,7 +11,10 @@
     <script
 			  src="https://code.jquery.com/jquery-3.6.0.min.js"
 			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-			  crossorigin="anonymous"></script>
+			  crossorigin="anonymous">
+    </script>
+    <script src="main.js"></script>
+
   </head>
   <body>
     <!-- Navigation-->
@@ -20,7 +23,7 @@
       <nav class="nav-main">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="about.html#scroll">About</a></li>
           <li><a href="activities.html">Activities</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -70,7 +73,7 @@
     <footer class="footer-bg">
       <div class="vert-center">
         <ul>
-          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html#misvis">About Us</a></li>
           <li><a href="activities.html">Activities</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -80,14 +83,5 @@
       </div>
     </footer>
 
-    <script>
-
-    $(document).ready(function() {
-      $(".gallery-header h2").click(function() {
-        $(".gallery-sec").slideToggle(1000);
-      });
-    });
-
-    </script>
   </body>
 </html>
