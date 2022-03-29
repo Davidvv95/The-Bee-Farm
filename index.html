@@ -8,6 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <title>The Bee Farm</title>
+    <script
+			  src="https://code.jquery.com/jquery-3.6.0.min.js"
+			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			  crossorigin="anonymous"></script>
   </head>
   <body>
     <!-- Navigation-->
@@ -32,29 +36,35 @@
           <h2>The Magic of Nature</h2>
         </div>
       </section>
-      <section id="gallery" class="aristotle-quote">
-        <p>"In all things of nature there<br> is something of the marvelous." - Aristotle</p>
+      <section class="aristotle-quote">
+        <p class="aris-p">"In all things of nature there<br> is something of the marvelous." - Aristotle</p>
       </section>
-    <section class="gallery-sec">
-      <a href="#" class="gallery-img">
-        <img alt="carrot" src="img/carrots.jpg">
-      </a>
-      <a href="#" class="gallery-img">
-        <img alt="culantro" src="img/culantro.jpg">
-      </a>
-      <div id="gallery"><a href="#" class="gallery-img">
-        <img alt="panal" src="img/panal.jpg">
-      </a></div>
-      <a href="#" class="gallery-img">
-        <img alt="tomate" src="img/tomate.jpg">
-      </a>
-      <a href="#gallery" class="gallery-img">
-        <img alt="rucula" src="img/rucula.jpg">
-      </a>
-      <a href="#" class="gallery-img">
-        <img alt="piquera" src="img/pique.jpg">
-      </a>
-    </section>
+
+      <div class="gallery-container">
+        <div class="gallery-header">
+          <h2>Gallery<br> ↓</h2>
+        </div>
+        <section class="gallery-sec">
+          <a href="#" class="gallery-img">
+            <img alt="carrot" src="img/carrots.jpg">
+          </a>
+          <a href="#" class="gallery-img">
+            <img alt="culantro" src="img/culantro.jpg">
+          </a>
+          <div id="gallery"><a href="#" class="gallery-img">
+            <img alt="panal" src="img/panal.jpg">
+          </a></div>
+          <a href="#" class="gallery-img">
+            <img alt="tomate" src="img/tomate.jpg">
+          </a>
+          <a href="#gallery" class="gallery-img">
+            <img alt="rucula" src="img/rucula.jpg">
+          </a>
+          <a href="#" class="gallery-img">
+            <img alt="piquera" src="img/pique.jpg">
+          </a>
+        </section>
+      </div>
     </main>
     <!-- Footer-->
     <footer class="footer-bg">
@@ -69,5 +79,15 @@
         <span>&copy; Copyright 2022</span>
       </div>
     </footer>
+
+    <script>
+
+    $(document).ready(function() {
+      $(".gallery-header h2").click(function() {
+        $(".gallery-sec").slideToggle(1000);
+      });
+    });
+
+    </script>
   </body>
 </html>
