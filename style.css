@@ -10,6 +10,10 @@
   font-family: Lato, arial;
 }
 
+a {
+  text-decoration: none;
+}
+
 main {
   padding-top: 100px;
 }
@@ -169,30 +173,25 @@ main {
   text-align: center;
 }
 
-.gallery-sec {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  margin: 0 20px 20px 20px;
-  display: none;
+.gallery  {
+  padding: 40px 0 0 0;
+  width: 80%;
+  margin: 0 auto;
 }
 
-.gallery-img {
-  flex-basis: 40%;
-  margin: 10px;
-}
-
-.gallery-img img {
+.gallery-item {
   width: 100%;
 }
 
-#gallery {
-  flex-basis: 90%;
+.gallery img {
+  background: #fff;
+  padding: 15px;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 
-#gallery img {
-  width: 100%;
-}
+
 
 @media only screen and (min-width: 736px) {
   .overlay h2 {
@@ -418,89 +417,11 @@ main {
   padding-top: 35px;
 }
 
-form {
-  width: 300px;
-  margin: 35px;
-}
-
-form h2 {
-  font-weight: 500;
-  font-size: 22px;
-}
-
-form p {
-  font-weight: 500;
-}
-
-input {
-  width: 100%;
-  margin: 10px 0;
-}
-
-textarea {
-  resize: both;
-  min-width: 125px;
-  max-width: 250px;
-  min-height: 100px;
-  max-height: 225px;
-}
-
-input, textarea {
-  outline: none;
-  border: 1px solid #bbb;
-}
-
-input:focus, textarea:focus {
-  box-shadow: 0 0 4px #111;
-  border: 1px solid #111;
-}
-
-select {
-margin-bottom: 10px;
-}
-
-button {
-  margin-top: 10px;
-}
-
-::placeholder {
-    color: #111;
-    opacity: 1;
-}
-::placeholder {
-    color: #111;
-    opacity: 1;
-}
-:-ms-input-placeholder {
-    color: #111;
-}
-::-ms-input-placeholder {
-    color: #111;
-}
 
 @media only screen and (min-width: 736px) {
   .contact-title h1 {
     font-size: 35px;
     padding-top: 29px;
-  }
-
-  form {
-    width: 450px;
-    margin: 35px;
-  }
-  form h2 {
-    font-size: 30px;
-  }
-
-  form p {
-    font-size: 24px;
-  }
-
-  textarea {
-    min-width: 200px;
-    max-width: 400px;
-    min-height: 175px;
-    max-height: 275px;
   }
 }
 
